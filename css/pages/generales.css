@@ -41,7 +41,8 @@
     border: none;
     width: 150px;
     height: 20px;
-    margin-left: 20px;
+    
+    margin-right: 200px;
     
     
 }
@@ -60,7 +61,11 @@
     padding: 0.5rem 1rem ;
     font-size: 12px;
     color: #fff;
-    display: flex;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
     
 }
 #mesas-computadas{
@@ -70,28 +75,40 @@
 #electores{
     background-color: #ee3d8f;
 
+
 }
 #escrutados{
     background-color: #9283be;
+    
 }
 #sec-contenido{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
 }
-.datos-politca{
-    width: 80%;
-    margin-top: 50px;
-    margin-left: 11%;
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+
+  
+
+.imagen-generales {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.h4-generales {
+  grid-column: 2;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  
+  align-items: center;
+}
+
+.p-generales {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  color: #fff;
+}
+
     
-    
-}
-.item{
-    display: flex;
-}
