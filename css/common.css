@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 /*
-  --magenta: #ee3d8f;
+--magenta: #ee3d8f;
 --celeste: #37bbed;
 --morado: #9283be;
 --gris-claro: #9e9e9e;
@@ -285,6 +285,7 @@ h3 {
   width: 80px;
   height: 20px;
 }
+
 .mensaje-usuario{
   width: 400px;
   margin: 20px auto;
@@ -294,8 +295,23 @@ h3 {
   font-size: 12px;
   font-weight: 200;
   text-align: center;
-  
-  
-  
 
 }
+
+#info-mesas{
+  display: flex;
+}
+
+#mesas-computadas{
+  background-color: #37bbed;
+  color: #FFF;
+
+}
+#electores{
+  background-color: #ee3d8f;
+
+}
+#escrutados{
+  background-color: #9283be;
+}
+
